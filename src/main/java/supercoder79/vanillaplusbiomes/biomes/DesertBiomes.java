@@ -18,6 +18,8 @@ import supercoder79.vanillaplusbiomes.util.BiomeHelper;
 
 import static supercoder79.vanillaplusbiomes.biomes.api.DefaultFeature.*;
 
+import java.util.regex.Pattern;
+
 public class DesertBiomes {
     public static BiomeTemplate template = new BiomeTemplate(TerraformBiomeBuilder.create()
             .surfaceBuilder(ConfiguredSurfaceBuilders.FULL_SAND)
@@ -28,8 +30,10 @@ public class DesertBiomes {
             .temperature(2.0F)
             .downfall(0.0F)
             .effects(new BiomeEffects.Builder()
-                    .waterColor(0x3F76E4)
-                    .waterFogColor(0x50533)
+                    .waterColor(0x32A598)
+                    .waterFogColor(0x32A598)
+                    .foliageColor(0xAEA42A)
+                    .grassColor(0xBFB755)
                     .fogColor(12638463)
                     .skyColor(BiomeHelper.getSkyColor(2.0f))
             )
@@ -58,8 +62,8 @@ public class DesertBiomes {
                 .temperature(1)
                 .downfall(1)
                 .effects(new BiomeEffects.Builder()
-                        .waterColor(4445678)
-                        .waterFogColor(270131)
+                        .waterColor(0x2C8B9C)
+                        .waterFogColor(0x2C8B9C)
                         .fogColor(12638463)
                         .skyColor(BiomeHelper.getSkyColor(1.0f))
                 )
